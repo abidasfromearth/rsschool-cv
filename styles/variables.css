@@ -1,0 +1,13 @@
+:root {
+    --color-green: #0A594B;
+    --color-white: #fff;
+    --color-black: #000000;
+    --color-gray: #808080;
+
+    --spacing-bg: 20px;
+    --spacing-sbg: 40px;
+    --spacing-md: 15px;
+    --spacing-sm: 10px;
+    /* super large */
+    --spacing-sl: 80px;
+}

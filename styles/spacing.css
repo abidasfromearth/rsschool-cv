@@ -1,0 +1,19 @@
+.spacing-bottom-sl {
+    margin-bottom: var(--spacing-sl);
+}
+
+.spacing-bottom-sm {
+    margin-bottom: var(--spacing-sm);
+}
+
+.spacing-bottom-bg {
+    margin-bottom: var(--spacing-bg);
+}
+
+.spacing-bottom-sbg {
+    margin-bottom: var(--spacing-sbg);
+}
+
+.spacing-bottom-md {
+    margin-bottom: var(--spacing-md);
+}
