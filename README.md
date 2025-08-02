@@ -1,3 +1,1 @@
-# rsschool-cv
-Rs school github-pages CV
-[View my CV](cv.md)
+[View my CV](https://abidasfromearth.github.io/rsschool-cv/cv)
