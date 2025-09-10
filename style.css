@@ -1,0 +1,279 @@
+@import "styles/variables.css";
+@import "styles/reset.css";
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.resume {
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+}
+
+.resume__avatar {
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+}
+
+.resume__sidebar {
+    background-color: var(--color-green);
+    width: 40dvw;
+}
+
+.resume__main {
+    width: 60dvw;
+    padding: 40px;
+}
+
+.resume__content {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 80px;
+}
+
+.resume__name {
+    font-size: 24px;
+    color: var(--color-white);
+    text-align: center;
+    font-weight: 600;
+}
+
+.resume__position {
+    font-size: 16px;
+    color: var(--color-white);
+    text-align: center;
+    text-transform: uppercase;
+    opacity: .7;
+    font-weight: 500;
+    letter-spacing: .4px;
+}
+
+.resume__divider {
+    width: 10%;
+    height: 1px;
+    background-color: var(--color-white);
+    margin: 20px auto;
+}
+
+.resume__details {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 2px;
+    justify-content: center;
+}
+
+.resume__details * {
+    text-align: center;
+}
+
+.resume__title {
+    color: var(--color-white);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.resume__title--small {
+    font-size: 14px;
+    opacity: .5;
+    letter-spacing: 1.4px;
+}
+
+.resume__title--dark {
+    color: var(--color-black);
+    font-weight: 600;
+}
+
+.resume__title--medium {
+    font-size: 16px;
+}
+
+.resume__text {
+    color: var(--color-white);
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.resume__description {
+    color: var(--color-black);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.resume__text:hover {
+    opacity: 0.8;
+}
+
+.resume__section {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.resume__section--tablet {
+    width: 100%;
+    max-width: 300px;
+}
+
+.resume__section--centered {
+    margin: 0 auto;
+}
+
+.resume__date {
+    color: var(--color-gray);
+    font-size: 12px;
+    letter-spacing: 1.2px;
+}
+
+.resume__article {
+    margin-bottom: 20px;
+}
+
+.resume__list-item .resume__list-label {
+    font-weight: 600;
+}
+
+.resume__list-item .resume__list-value {
+    font-weight: 400;
+}
+
+/* Skills */
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skill:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.skill__name {
+    font-size: 12px;
+    color: var(--color-white);
+}
+
+.skill__bar {
+    border-radius: 4px;
+    width: 80%;
+    height: 10px;
+    background-color: rgb(181, 180, 179);
+    position: relative;
+}
+
+.skill__bar::before {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 100%;
+    background-color: var(--color-white);
+}
+
+/* Уровни навыков */
+.skill__bar--90::before {
+    width: 90%;
+}
+
+.skill__bar--85::before {
+    width: 85%;
+}
+
+.skill__bar--80::before {
+    width: 80%;
+}
+
+.skill__bar--60::before {
+    width: 60%;
+}
+
+.skill__bar--70::before {
+    width: 70%;
+}
+
+.skill__bar--65::before {
+    width: 65%;
+}
+
+.skill__bar--100::before {
+    width: 100%;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+/* Media queries */
+
+@media (max-width: 1035px) {
+    .resume__content {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .resume {
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    .resume__sidebar {
+        width: 100%;
+        min-height: auto;
+    }
+
+    .resume__main {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .resume__section--tablet {
+        width: clamp(16.5rem, 4.84rem + 37.313vw, 22.75rem);
+    }
+
+    .resume__section--centered {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 500px) {
+    .resume__content {
+        padding: 10px;
+    }
+
+    .resume__main {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 475px) {
+    .resume {
+        min-height: 100vh;
+    }
+
+    .resume__content {
+        padding: 10px 5px;
+    }
+
+    .resume__main {
+        padding: 10px;
+    }
+
+    .resume__section--tablet {
+        width: 100%;
+        max-width: none;
+    }
+
+    .skill__bar {
+        width: 90%;
+    }
+}
