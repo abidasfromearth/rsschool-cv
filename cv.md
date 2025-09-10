@@ -94,7 +94,7 @@ Highly motivated Junior Frontend Engineer with a strong background in Automation
 ## Education & Training
 
 ### Language Proficiency
-- **English:** B1 Level
+- **English:** B2 Level
 - **Ukrainian:** Native
 - **Russian:** Native
 
